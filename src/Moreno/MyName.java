@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class MyName{
 
     private String getName() {
-        System.out.print("Enter the name: ");
-        String name= _scanner.nextLine();
+        String name = "Andres";
         return name;
     }
 
-    private void displayArea(double radius) {
-        double area = Math.PI * radius * radius;
-        System.out.format("\tArea: %.2f\n", area);
+    private String compName() {
+        System.out.println("Enter you name (team member): ");
+        String comp = _scanner.nextLine();
+        return comp;
     }
     // By marking this "static final" it acts like a constant.
     private static final Scanner _scanner = new Scanner( System.in );
@@ -20,6 +20,7 @@ public class MyName{
     public static void main(String[] args) {
         MyName name = new MyName();
         String n = name.getName();
-        System.out.println("Hello my name is " + n);
+        String p = name.compName();
+        System.out.println("Hello " + p + "! My name is " + n + " :)");
     }
 }
