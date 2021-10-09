@@ -22,5 +22,7 @@ public class MyName{
         String n = name.getName();
         String p = name.compName();
         System.out.println("Hello " + p + "! My name is " + n + " :)");
+        
+        System.out.printf("Hello, %s. This is %s, I guess you made my part as well, thank you :D", name.getName(), "Nicholas");
     }
 }
